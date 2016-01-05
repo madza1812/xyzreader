@@ -41,17 +41,13 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     public static final String TAG = ArticleListActivity.class.getSimpleName();
 
-    private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
-    private boolean mIsSwipeRefreshing = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
-
-        mToolbar = (Toolbar) findViewById(R.id.toolbar_article_list);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -63,10 +59,6 @@ public class ArticleListActivity extends AppCompatActivity implements
         });
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-       /* mRecyclerView.addItemDecoration(new DividerItemDecoration(getApplicationContext(),
-                getApplicationContext().getDrawable(R.drawable.padded_divider),
-                DividerItemDecoration.HORIZONTAL_LIST));*/
-        //getLoaderManager().initLoader(0, null, this);
 
         if (savedInstanceState == null && isNetworkAvailable()) {
             Log.v(TAG, "saveInstanceState is NULL, start UpdateService");
@@ -93,11 +85,6 @@ public class ArticleListActivity extends AppCompatActivity implements
                 .getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
         return (activeNetwork != null && activeNetwork.isConnectedOrConnecting());
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
     }
 
     @Override

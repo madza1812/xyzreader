@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">XYZ Reader</string>
+    <string name="welcome_xyz_reader">Welcome to XYZ Reader!</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+
+    <string name="up">Up</string>
+
+    <!--Added by AN-->
+    <string name="article_list_title">Articles</string>
+    <string name="desc_detail_photo">Article Image</string>
+    <string name="desc_list_thumbnail">Thumbnail</string>
+    <string name="decs_card_view">Article</string>
+    <string name="no_connection_message">No Internet Connection. Try again.</string>
+    <string name="error_loading_article">Error loading new articles.</string>
+
+</resources>

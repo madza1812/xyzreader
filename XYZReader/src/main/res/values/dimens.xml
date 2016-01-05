@@ -1,0 +1,21 @@
+<resources>
+    <!-- detail -->
+    <dimen name="detail_title_text_size">32sp</dimen>
+    <dimen name="detail_sub_title_text_size">16sp</dimen>
+    <dimen name="detail_body_text_size">22sp</dimen>
+    <item name="detail_body_line_spacing_multiplier" format="float" type="fraction">1.25</item>
+    <item name="detail_title_line_spacing_multiplier" format="float" type="fraction">0.9</item>
+    <dimen name="article_list_title_text_size">14sp</dimen>
+    <dimen name="article_list_subtitle_text_size">12sp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="list_item_card_view_margin">4dp</dimen>
+    <dimen name="list_item_text_title_padding">6dp</dimen>
+    <dimen name="list_item_text_title_padding_bottom">2dp</dimen>
+
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="fab_press_translation_z">6dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+
+</resources>
